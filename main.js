@@ -61,6 +61,9 @@ for (let i = 0; i < biciclette.length; i++) {
     
 }
 
+let bicicletta = document.getElementById('bicicletta');
+
+bicicletta.innerHTML = minValue.weight;
 console.log(minValue.weight);
 
 
