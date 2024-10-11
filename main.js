@@ -124,3 +124,16 @@ const squadre = [
         falliSubiti: 0
     }
 ]
+
+//Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
+
+for (let i = 0; i < squadre.length; i++) {
+    const squadra = squadre[i];
+    
+    //aggiorno i valori di puntiFatti e falliSubiti
+    squadra.puntiFatti = Math.floor(Math.random() * 100) + 1;
+    squadra.falliSubiti = Math.floor(Math.random() * 30) + 1;
+    //loggo i nuovi risultati
+    console.log(squadra.puntiFatti, squadra.falliSubiti);
+    
+}
