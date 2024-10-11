@@ -137,7 +137,16 @@ for (let i = 0; i < squadre.length; i++) {
     //loggo i nuovi risultati
     console.log(squadra.puntiFatti, squadra.falliSubiti);
     
+    //Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console
+    const newArr = [];
+    newArr.push(squadra.name, squadra.falliSubiti);
+    console.log(newArr);
+    
 }
 
 //loggo squadre per vedere se i dati sono aggiornati
 console.log(squadre);
+
+
+
+
