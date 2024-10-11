@@ -133,7 +133,11 @@ for (let i = 0; i < squadre.length; i++) {
     //aggiorno i valori di puntiFatti e falliSubiti
     squadra.puntiFatti = Math.floor(Math.random() * 100) + 1;
     squadra.falliSubiti = Math.floor(Math.random() * 30) + 1;
+    
     //loggo i nuovi risultati
     console.log(squadra.puntiFatti, squadra.falliSubiti);
     
 }
+
+//loggo squadre per vedere se i dati sono aggiornati
+console.log(squadre);
