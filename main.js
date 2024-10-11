@@ -126,8 +126,11 @@ const squadre = [
     }
 ]
 
-//Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
 
+//creo un nuovo array i cui elementi contengono solo nomi e falli subiti
+const newArr = [];
+
+//Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
 for (let i = 0; i < squadre.length; i++) {
     const squadra = squadre[i];
     
@@ -135,18 +138,15 @@ for (let i = 0; i < squadre.length; i++) {
     squadra.puntiFatti = Math.floor(Math.random() * 100) + 1;
     squadra.falliSubiti = Math.floor(Math.random() * 30) + 1;
     
-    //loggo i nuovi risultati
-    //console.log(squadra.puntiFatti, squadra.falliSubiti);
-    
-    //Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console
-    const newArr = [];
+    //pusho i valori nel nuovo array
     newArr.push({name: squadra.name, falliSubiti: squadra.falliSubiti});
-    console.log(newArr);
+    
     
 }
 
-//loggo squadre per vedere se i dati sono aggiornati
-console.log(squadre);
+//loggo per vedere se i dati sono aggiornati
+console.log(squadre, newArr);
+
 
 
 
