@@ -5,6 +5,7 @@ Creare un array di oggetti:
 Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
 Stampare a schermo la bici con peso minore.*/
 
+//creo l'array di oggetti
 const biciclette = [
     {
         name: 'bicicletta1',
@@ -47,7 +48,21 @@ const biciclette = [
     }
 ]
 
+//Stampare a schermo la bici con peso minore.
+//ciclo all'interno dell'array
 
+let minValue = 8;
+for (let i = 0; i < biciclette.length; i++) {
+    const bici = biciclette[i];
+    let pesoBici = bici.weight;
+    
+    
+    if(pesoBici === minValue){
+        console.log(pesoBici);
+        
+    }
+    
+}
 
 /*Snack 2
 Creare un array di oggetti di squadre di calcio.
