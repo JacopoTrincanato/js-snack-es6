@@ -64,7 +64,7 @@ for (let i = 0; i < biciclette.length; i++) {
 //richiamo il div con getElement
 let bicicletta = document.getElementById('bicicletta');
 
-bicicletta.innerHTML = minValue.weight;
+bicicletta.innerHTML = `Il peso minore corrisponde a: ${minValue.weight} kg`;
 console.log(minValue.weight);
 
 
