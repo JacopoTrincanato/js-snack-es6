@@ -61,6 +61,7 @@ for (let i = 0; i < biciclette.length; i++) {
     
 }
 
+//richiamo il div con getElement
 let bicicletta = document.getElementById('bicicletta');
 
 bicicletta.innerHTML = minValue.weight;
@@ -135,11 +136,11 @@ for (let i = 0; i < squadre.length; i++) {
     squadra.falliSubiti = Math.floor(Math.random() * 30) + 1;
     
     //loggo i nuovi risultati
-    console.log(squadra.puntiFatti, squadra.falliSubiti);
+    //console.log(squadra.puntiFatti, squadra.falliSubiti);
     
     //Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console
     const newArr = [];
-    newArr.push(squadra.name, squadra.falliSubiti);
+    newArr.push({name: squadra.name, falliSubiti: squadra.falliSubiti});
     console.log(newArr);
     
 }
