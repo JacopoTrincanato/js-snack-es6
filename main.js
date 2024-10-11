@@ -51,19 +51,17 @@ const biciclette = [
 //Stampare a schermo la bici con peso minore.
 //ciclo all'interno dell'array
 
-let minValue = 8;
+let minValue =biciclette[0];
 for (let i = 0; i < biciclette.length; i++) {
     const bici = biciclette[i];
-    let pesoBici = bici.weight;
     
-    
-    if(pesoBici === minValue){
-        console.log(pesoBici);
-        
+    if(bici.weight < minValue.weight){
+        minValue = bici
     }
     
 }
 
+console.log(minValue.weight);
 /*Snack 2
 Creare un array di oggetti di squadre di calcio.
 Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti.
